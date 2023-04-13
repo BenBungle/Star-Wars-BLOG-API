@@ -2,11 +2,8 @@ import React from "react";
 import { Starship } from "../component/starship";
 
 
-function Starships () {
-    return <div>
-        <NAE/>
+export const Starships = () => (
+    <div className="text-center mt-5">
+        <Starship />
     </div>
-}
-
-
-export default Starships;
+)

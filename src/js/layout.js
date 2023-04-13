@@ -1,13 +1,22 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import "../styles/home.css";
+
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
-import Starships from "./views/starships";
-import Planets from "./views/planets";
-import Characters from "./views/Characters";
+import { Characters } from "./views/characters";
+import { Planets } from "./views/planets";
+import { Starships } from "./views/starships";
+import { FilmsAndSeries } from "./views/filmsandseries";
+import { Games } from "./views/games";
+import { Philosophy } from "./views/philosophys"
+import { PlanetsDetails } from "./views/planetsdetails";
+import { CharacterDetails } from "./views/characterdetails";
+import { StarshipsDetails } from "./views/starshipsdetails";
+import { FilmsDetails } from "./views/filmsdetails";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -20,17 +29,24 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<div id="er">
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
-						<Route path="/starships" element={<Starships />} />
-						<Route path="/planets" elements={<Planets />} />
-						<Route path="/characters" elements={<Characters />} />
+						<Route path="/single/:id" element={<Single />} />
+						<Route path="/starships/all" element={<Starships />} />
+						<Route path="/starships/details/:id" element={<StarshipsDetails />} />
+						<Route path="/planets/all" element={<Planets />} />
+						<Route path="/planets/details/:id" element={<PlanetsDetails />} />
+						<Route path="/characters/all" element={<Characters />} />
+						<Route path="/characters/details/:id" element={<CharacterDetails />} />
+						<Route path="/films/all" element={<FilmsAndSeries />} />
+						<Route path="/films/details/:id" element={<FilmsDetails/> } /> 
+						<Route path="/philosophy" element={<Philosophy/>}/>
+						<Route path="/games" element={<Games />}/>
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />

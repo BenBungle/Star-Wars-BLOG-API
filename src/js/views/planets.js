@@ -1,10 +1,8 @@
 import React from "react";
-import { LePlanet } from "../component/lohPlaneta";
+import { Planet } from "../component/planet";
 
-function Planets () {
-    return <div>
-        <LePlanet/>
+export const Planets = () => (
+    <div className="text-center mt-5">
+        <Planet />
     </div>
-} 
-
-export default Planets;
+)

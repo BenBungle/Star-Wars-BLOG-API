@@ -1,5 +1,5 @@
 import React from "react";
-import { NAE } from  "../component/laNAE";
+import { Starship } from "../component/starship";
 
 
 function Starships () {

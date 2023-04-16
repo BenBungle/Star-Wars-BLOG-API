@@ -20,7 +20,7 @@ export const Homecard = (props) => {
           borderRadius: "15px",
         }}
       ></div>
-      <div className="position-relative top-50 start-100 translate-middle mb-5 w-100 p-5 text-end">
+      <div className="position-relative top-50 start-50 translate-middle mb-5 w-100 p-5 d-flex justify-content-end text-end">
         <h3 className="card-title col-md-5" style={{color: "white"}}>{props.titulo1}</h3>
       </div>
     </div>

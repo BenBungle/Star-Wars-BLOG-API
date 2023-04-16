@@ -24,7 +24,7 @@ export const Philosophylore1 = (props) => {
                     }}
                 ></div>
                 <div className="position-relative top-50 start-50 translate-middle mb-5 w-100 p-5">
-                    <p className="card-title my-3 w-100" style={{ color: "turqouise" }}>{props.pphilosophy1}</p>
+                    <p className="card-title my-3 w-100 fw-bolder fs-4 h-100 bg-opacity-25 bg-light" style={{ color: "turquoise"  }}>{props.pphilosophy1}</p>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ export const Philosophylore2 = (props) => {
                     }}
                 ></div>
                 <div className="position-relative top-50 start-50 translate-middle mb-5 w-100 p-5">
-                    <p className="card-title my-3 w-100" style={{ color: "turqouise" }}>{props.pphilosophy1}</p>
+                    <p className="card-title my-3 w-100 fw-bolder fs-4 h-100 bg-opacity-25 bg-light" style={{ color: "turqouise" }}>{props.pphilosophy2}</p>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ export const Philosophylore3 = (props) => {
                     }}
                 ></div>
                 <div className="position-relative top-50 start-50 translate-middle mb-5 w-100 p-5">
-                    <p className="card-title my-3 w-100" style={{ color: "turqouise" }}>{props.pphilosophy1}</p>
+                    <p className="card-title my-3 w-100 fw-bolder fs-4 h-100 bg-opacity-25 bg-light" style={{ color: "turqouise" }}>{props.pphilosophy3}</p>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@ export const Philosophylore4 = (props) => {
                     }}
                 ></div>
                 <div className="position-relative top-50 start-50 translate-middle mb-5 w-100 p-5">
-                    <p className="card-title my-3 w-100" style={{ color: "turqouise" }}>{props.pphilosophy1}</p>
+                    <p className="card-title my-3 w-100 fw-bolder fs-4 h-100 bg-opacity-25 bg-light" style={{ color: "turqouise" }}>{props.pphilosophy4}</p>
                 </div>
             </div>
         </div>

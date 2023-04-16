@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import botonprincipal from "../../img/maytheforce.png";
 import { Context } from "../store/appContext";
+import "../../styles/navbar.css";
+
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context)
@@ -54,7 +56,7 @@ export const Navbar = () => {
 					</Link>
 					<Link to="/films/all" style={{ textDecoration: "none" }}>
 						<li className="nav-item">
-							<p className="nav-link active text-secondary" style={{ fontSize: "1.1rem", backgroundColor: "rgba(0, 0, 0, 0.5)", transition: "background-color 0.3s ease", opacity: "0.2"}} aria-current="page"
+							<p className="nav-link active text-secondary" style={{ fontSize: "1.1rem", transition: "background-color 0.3s ease" }} aria-current="page"
 								onMouseEnter={(e) => { e.target.style.backgroundColor = "gray" }}
 								onMouseLeave={(e) => { e.target.style.backgroundColor = "transparent" }} >
 							Films&Series
@@ -77,9 +79,9 @@ export const Navbar = () => {
 								(
 									store.favorites.map((favorite, i) => {
 										return (
-											<li className="dropdown-item d-flex justify-content-between">
-												{favorite.name}
-												<i className="far fa-trash-alt text-black bg-transparent" onClick={() => actions.deleteFavorite(i)} />
+											<li className="dropdown-item d-flex justify-content-between text-truncate">
+												<span className="d-inline-block text-truncate">{favorite.name}</span>
+												<i className="far fa-trash-alt text-black bg-transparent flex-shrink-0" onClick={() => actions.deleteFavorite(i)} />
 											</li>
 
 										)

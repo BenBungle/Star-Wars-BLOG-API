@@ -8,3 +8,11 @@
 nav {
     background-color: rgb(28, 28, 34);
 }
+.dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px; /* set the maximum width of the favorite name */
+  }
+
+  

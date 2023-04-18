@@ -1,59 +1,64 @@
 .card {
-    margin: 0 auto;
-    width: 267px;
-    height: 401px;
-    background: #171F22;
-    box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    }
-    
-  .card-image {
-      margin: 0 auto;
-      width: 267px;
-      height: 229px;
-      background-color: aqua;
-      border-radius: 25px 25px 0px 0px;
-    }
-    
-  .card-content {
-      padding: 16px;
-    }
-    
-  .card-title {
-      width: 194px;
-      height: 33px;
-      font-family: 'Ubuntu';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 21px;
-      line-height: 24px;
-      color: #FFFFFF;
-    }
-  
-  .card-category{
-      width: 160px;
-      height: 32px;
-      font-family: 'Ubuntu';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 0.205em;
-      color: #8BFE55;
-    }
-    
-  .card-details {
-      width: 159px;
-      height: 32px;
-      font-family: 'Ubuntu';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 20px;
-      color: #5EFADE;
-    }
-  
-    #shit{
-    background-color: #171F22;
-  
-    }
+  margin: 0 auto;
+  width: 267px;
+  height: 401px;
+  background: #171f22;
+  box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.card-image {
+  margin: 0 auto;
+  width: 267px;
+  height: 229px;
+  background-color: aqua;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  width: 194px;
+  height: 33px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.card-category {
+  width: 160px;
+  height: 32px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.205em;
+  color: #8bfe55;
+}
+
+.card-details {
+  width: 159px;
+  height: 32px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5efade;
+}
+
+#shit {
+  background-color: #171f22;
+}
+.i {
+  background-color: #171f22;
+}
+.button {
+  background-color: #171F22;
+}
